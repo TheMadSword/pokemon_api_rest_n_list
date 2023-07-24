@@ -15,7 +15,7 @@ Autres notes :
 - Ce n'était pas exactement très claire la pagination que vous vouliez (normalement quand on parle de pagination, on parle de page et on veut donc souvent un affichage, je me suis donc permis de faire plus que juste un API: J'ai fait 2 versions (une avec call au serveur pour chaque page [/index, pagy & dataTable], une sans [/index_alternate, tout loadé naïvement (y'a pas tant de pokémons), je laisse dataTable paginer le tout]; un lien est présent et permet facilement la navigation entre les 2 versions).
 - J'ai mis un boute "delete" dans le tableau (pour le fun).
 - Vous disiez vouloir pouvoir obtenir "une liste", ce qui était ambigu : voulait-on un visuel ou un juste le data? J'ai donc fait les 2.
-- Vous m'encouragiez à écrire des tests unitaires. N'ayant pas vraiment de logique "unitaire" (hormis la lecture du CSV) à tester j'ai plus fait une sorte d'hybride avec des tests d'intégrations pour le Controller avec FactoryBot.
+- Vous m'encouragiez à écrire des tests unitaires. N'ayant pas vraiment de logique "unitaire" (hormis la lecture du CSV, et celle qui est vraiment plus côté Rails/Ruby) à tester, j'ai plus fait une sorte d'hybride avec des tests d'intégrations pour le Controller avec FactoryBot.
 
 # Database : 
 Elles sont commitées peuplées. Pour les reseter si nécessaire : 
