@@ -1,0 +1,57 @@
+$(function() {
+    const CLS_PROCESSING = "processing";
+
+    const myTable = $("#myTable");
+    console.log("Pagination type = " + myTable.attr("pagination_type"));
+    let args = {};
+    const is_pagy = Boolean(myTable.attr("pagination_type") === "pagy");
+    if (is_pagy)
+        args = {searching: false, paging: false, info: false};
+    let dataTable = myTable.DataTable({...args, ...{
+        columns: [
+            { orderable: false },
+            { orderable: false },
+            { orderable: false },
+            { orderable: false },
+            { orderable: false },
+            { orderable: false },
+            { orderable: false },
+            { orderable: false },
+            { orderable: false },
+            { orderable: false },
+            { orderable: false },
+            { orderable: false },
+            { orderable: false },
+            { orderable: false },
+            { orderable: false },
+        ],
+            order: []
+    }} );
+
+    function deleteCallbackDone(success, row) {
+        if (success) {
+            row.remove().draw();
+        }
+        myTable.removeClass(CLS_PROCESSING);
+    }
+
+    myTable.find("tbody").on('click', 'tr td a.delete', function() {
+        if (myTable.hasClass(CLS_PROCESSING) === true) {
+            return;
+        }
+        //console.log( dataTable.row( this ).data() );
+        console.log(dataTable.row( this.closest("tr") ).data());
+        let row = dataTable.row( this.closest("tr") );
+
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (this.readyState == 4) {
+                deleteCallbackDone(this.status >= 200 && this.status < 400, row);
+            }
+        };
+        xhr.open("DELETE", `/pokemons/${row.data()[0]}`);
+        xhr.send();
+
+        myTable.addClass(CLS_PROCESSING);
+    });
+});

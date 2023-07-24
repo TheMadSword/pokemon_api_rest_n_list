@@ -1,0 +1,23 @@
+<h1>All pokemons preloaded, pagination without xhr, w/ datatable
+  <%=link_to "An alternative", pokemons_path %>
+</h1>
+<table id="myTable" class="display" pagination_type="<%= @pagination_mode%>">
+  <thead>
+  <tr>
+    <% Pokemon.column_names.each do |col| %>
+      <th><%= col.to_s %></th>
+    <% end %>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @pokemons.each do |poke| %>
+    <tr>
+      <% Pokemon.column_names.each do |col| %>
+        <td><%= poke.attributes[col] %></td>
+      <% end %>
+      <td><a href="#" class="delete">DELETE</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TestApplicationNotApi</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag "jquery-3.7.0.min" %>
+    <%= stylesheet_link_tag "jquery.dataTables_1.13.5.min.css" %>
+    <%= javascript_include_tag "jquery.dataTables_1.13.5.min.js" %>
+    <%= stylesheet_link_tag "bootstrap.min" %>
+    <%= javascript_include_tag "bootstrap.min" %>
+    <%= javascript_include_tag "pokemon_table_init" %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

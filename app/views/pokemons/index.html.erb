@@ -1,0 +1,32 @@
+<h1>Only one page loaded at a time, pagination with xhr
+  <%=link_to "An alternative", pokemons_alternate_path %>
+</h1>
+<div class="pag-bar mt-1 pt-1">
+  <%== pagy_bootstrap_nav(@pagy) %>
+</div>
+<table id="myTable" class="display" pagination_type="<%= @pagination_mode%>" page_size="<%= @page_size %>"
+       pagy_items="<%= @pagy.items %>">
+  <thead>
+  <tr>
+    <% Pokemon.column_names.each do |col| %>
+    <th><%= col.to_s %></th>
+    <% end %>
+    <th>
+      Actions
+    </th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @pokemons.each do |poke| %>
+  <tr>
+      <% Pokemon.column_names.each do |col| %>
+      <td><%= poke.attributes[col] %></td>
+      <% end %>
+      <td><a href="#" class="delete">DELETE</a></td>
+  </tr>
+  <% end %>
+  </tbody>
+</table>
+<div class="pag-bar mt-1 pt-1">
+  <%== pagy_bootstrap_nav(@pagy) %>
+</div>

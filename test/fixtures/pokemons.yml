@@ -1,0 +1,39 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the "{}" from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one: {
+  pokedex_id: 1001,
+    name: "Bobafett",
+    type1: "Fire",
+    type2: nil,
+    total: 100,
+    hp: 50,
+    attack: 10,
+    defense: 10,
+    sp_atk: 10,
+    sp_def: 10,
+    speed: 10,
+    generation: 10,
+    legendary: false
+}
+# column: value
+#
+two: {
+  pokedex_id: 1002,
+  name: "Anakin",
+  type1: "Wind",
+  type2: nil,
+  total: 101,
+  hp: 51,
+  attack: 10,
+  defense: 10,
+  sp_atk: 10,
+  sp_def: 10,
+  speed: 10,
+  generation: 10,
+  legendary: true
+}
+# column: value

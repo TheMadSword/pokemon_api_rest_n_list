@@ -1,0 +1,12 @@
+#,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary
+1,Bulbasaur,Grass,Poison,318,45,49,49,65,65,45,1,False
+2,Ivysaur,Grass,Poison,405,60,62,63,80,80,60,1,False
+3,Venusaur,Grass,Poison,525,80,82,83,100,100,80,1,False
+150,Mewtwo,Psychic,,680,106,110,90,154,90,130,1,True
+150,MewtwoMega Mewtwo X,Psychic,Fighting,780,106,190,100,154,100,130,1,True
+150,MewtwoMega Mewtwo Y,Psychic,,780,106,150,70,194,120,140,1,True
+151,Mew,Psychic,,600,100,100,100,100,100,100,1,False
+152,Chikorita,Grass,,318,45,49,65,49,65,45,2,False
+190,Aipom,Normal,,360,55,70,55,40,55,85,2,False
+700,Sylveon,Fairy,,525,95,65,65,110,130,60,6,False
+721,Volcanion,Fire,Water,600,80,110,120,130,90,70,6,True
