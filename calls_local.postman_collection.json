@@ -1,0 +1,373 @@
+{
+	"info": {
+		"_postman_id": "82e2be5c-a2fe-43a1-ba30-36d0615472d0",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24944274"
+	},
+	"item": [
+		{
+			"name": "Pokemon_Show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:3000/pokemons/2401",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3000",
+					"path": [
+						"pokemons",
+						"2401"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokemon_Pokedex",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:3000/pokemons/pokedex/680",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3000",
+					"path": [
+						"pokemons",
+						"pokedex",
+						"680"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokemon_Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:3000/pokemons/search?pokedex_id=4&name=bob&type1=Fire&total=100&hp=50&defense=10&attack=10&sp_atk=10&sp_def=10&speed=10&generation=42&legendary=false",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3000",
+					"path": [
+						"pokemons",
+						"search"
+					],
+					"query": [
+						{
+							"key": "pokedex_id",
+							"value": "4"
+						},
+						{
+							"key": "name",
+							"value": "bob"
+						},
+						{
+							"key": "type1",
+							"value": "Fire"
+						},
+						{
+							"key": "total",
+							"value": "100"
+						},
+						{
+							"key": "hp",
+							"value": "50"
+						},
+						{
+							"key": "defense",
+							"value": "10"
+						},
+						{
+							"key": "attack",
+							"value": "10"
+						},
+						{
+							"key": "sp_atk",
+							"value": "10"
+						},
+						{
+							"key": "sp_def",
+							"value": "10"
+						},
+						{
+							"key": "speed",
+							"value": "10"
+						},
+						{
+							"key": "generation",
+							"value": "42"
+						},
+						{
+							"key": "legendary",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokemon_Search (like pokedex)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:3000/pokemons/search?pokedex_id=680",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3000",
+					"path": [
+						"pokemons",
+						"search"
+					],
+					"query": [
+						{
+							"key": "pokedex_id",
+							"value": "680"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokemon_Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:3000/pokemons?pokedex_id=2&name=bob&type1=Fire&total=100&hp=50&defense=10&attack=10&sp_atk=10&sp_def=10&speed=10&generation=42&legendary=false",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3000",
+					"path": [
+						"pokemons"
+					],
+					"query": [
+						{
+							"key": "pokedex_id",
+							"value": "2"
+						},
+						{
+							"key": "name",
+							"value": "bob"
+						},
+						{
+							"key": "type1",
+							"value": "Fire"
+						},
+						{
+							"key": "total",
+							"value": "100"
+						},
+						{
+							"key": "hp",
+							"value": "50"
+						},
+						{
+							"key": "defense",
+							"value": "10"
+						},
+						{
+							"key": "attack",
+							"value": "10"
+						},
+						{
+							"key": "sp_atk",
+							"value": "10"
+						},
+						{
+							"key": "sp_def",
+							"value": "10"
+						},
+						{
+							"key": "speed",
+							"value": "10"
+						},
+						{
+							"key": "generation",
+							"value": "42"
+						},
+						{
+							"key": "legendary",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokemon_Update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:3000/pokemons/2401?pokedex_id=5&name=bob&type1=Fire&total=100&hp=50&defense=10&attack=10&sp_atk=10&sp_def=10&speed=10&generation=42&legendary=false",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3000",
+					"path": [
+						"pokemons",
+						"2401"
+					],
+					"query": [
+						{
+							"key": "pokedex_id",
+							"value": "5"
+						},
+						{
+							"key": "name",
+							"value": "bob"
+						},
+						{
+							"key": "type1",
+							"value": "Fire"
+						},
+						{
+							"key": "total",
+							"value": "100"
+						},
+						{
+							"key": "hp",
+							"value": "50"
+						},
+						{
+							"key": "defense",
+							"value": "10"
+						},
+						{
+							"key": "attack",
+							"value": "10"
+						},
+						{
+							"key": "sp_atk",
+							"value": "10"
+						},
+						{
+							"key": "sp_def",
+							"value": "10"
+						},
+						{
+							"key": "speed",
+							"value": "10"
+						},
+						{
+							"key": "generation",
+							"value": "42"
+						},
+						{
+							"key": "legendary",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokemon_Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:3000/pokemons/2401",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3000",
+					"path": [
+						"pokemons",
+						"2401"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokemon_Index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:3000/pokemons/2401",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3000",
+					"path": [
+						"pokemons",
+						"2401"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokemon_All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:3000/pokemons/2401",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3000",
+					"path": [
+						"pokemons",
+						"2401"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
