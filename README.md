@@ -7,11 +7,11 @@ Aussi /pokemons and /pokemons_alternate dans le navigateur pour un format de lis
 Source of pokemons.csv : https://gist.github.com/armgilles/194bcff35001e7eb53a2a8b441e8b2c6
 
 # May need to do : 
-# rake db:drop RAILS_ENV=test/development
-# rake db:create RAILS_ENV=test/development
-# rake db:schema:load RAILS_ENV=test/development
-# rake db:fixtures:load RAILS_ENV=test/development (notably for tests)
-# rake pokemons:import[pokemons.csv]
+- rake db:drop RAILS_ENV=test/development
+- rake db:create RAILS_ENV=test/development
+- rake db:schema:load RAILS_ENV=test/development
+- rake db:fixtures:load RAILS_ENV=test/development (notably for tests)
+- rake pokemons:import[pokemons.csv]
 
 Other notes : 
 
