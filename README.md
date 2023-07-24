@@ -1,6 +1,7 @@
 # pokemon_api_rest_n_list
 Test technique pour entrevue @ PetalMD
 
+- Fait avec Rails 7, avec Rubymine
 - Voir fichier calls_local.postman_collection.json pour les calls Postman
 - Aussi /pokemons and /pokemons_alternate dans le navigateur pour un format de liste visuelle.
 
